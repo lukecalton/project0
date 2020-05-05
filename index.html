@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Use all characters within the UTF-8 space -->
+    <meta charset="utf-8">
+    <!--To ensure proper rendering and touch zooming for all devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Set myself as the author of the webpage -->
+    <meta name="author" content="Luke Calton">
+    <!--add a description with keywords so this is picked up by search engines -->
+    <meta name="description" content="This is my first ever website that puts into practice learning HTML and CSS">
+    <!--set a base url-->
+    <base href="file:///Users/lukecalton/Documents/project0/index.html">
+    <!--my external stylesheet -->
+    <link rel="stylesheet" href="styleguide.css">
+    <!--add bootsrap external framework -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--Add a favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!--set the webpage title to my name -->
+    <title>Luke Calton</title>
+
+    <style>
+        @media (min-width: 500px) {
+            h1::before {
+                content: "Welcome to Luke's website!";
+            }
+        }
+
+        @media (max-width: 499px) {
+            h1::before {
+                content: "Welcome!";
+            }
+        }
+    </style>
+
+  </head>
+
+    <body>
+
+      <!-- use bootstrap grid layout -->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+          </div>
+          <div class="col-sm">
+          <!--Headline title is taken from the content within the media query -->
+            <h1></h1>
+            <img src="me.jpeg">
+            <p id="mydescription"> Here is my <strong>first</strong> attempt at a website. </p>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.n </p>
+            <button id="emailmebutton" type="button" class="btn btn-outline-info btn-sm btn-block"><a href="mailto:lukecalton@outlook.com?&subject=I%20saw%20your%20website&body=and%20just%20wanted%20to%20let%20you%20know">Send me an email</a></button>
+            <h2>Here is a list of my four favourite food cuisines</h2>
+            <li><a href="italian.html">Italian</li></a>
+            <li><a href="mexican.html">Mexican</li></a>
+            <li><a href="indian.html">Indian</li></a>
+            <li><a href="vietnamese.html">Vietnamese</li></a>
+            <h4>Here is a table of how I would rank each of these cuisines</h4>
+            <p>
+            <table>
+              <tr>
+                <th>Ranking</th>
+                <th>Cuisine</th>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Indian</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Italian</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Mexican</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Vietnamese</td>
+                </tr>
+              </table>
+
+              <h4> Here are some specific examples now to pass project0. I've applied specific styling to this heading using an ID </h4>
+            <div class="errormessage"> This is a message styled due to inheritance and my first use of a class, changing some text to merge.</div>
+            <div class="successmessage"> This is another message styled due to inheritance </div>
+          </div>
+          <div class="col-sm">
+            <h2> Using another column in bootstraps grid layout </h2>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+      </div>
+
+    <p> Here is a paragraph outside of a div element that should render in a different colour</p>
+
+    </body>
+
+</html>

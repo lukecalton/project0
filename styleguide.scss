@@ -1,0 +1,103 @@
+// Variable names for colours
+$maincolor: #008080;
+$secondarycolor: #0a5d8a;
+$black: #000000;
+$blue: #0a354d;
+$backgroundcolor: #e8e7e6;
+$yellow: #fcba03;
+// Generic headings styling
+
+// set overall font to a family and colour
+html {
+  margin: 30px;
+  font-family: sans-serif;
+}
+
+body {
+  padding: 0 20px 20px 20px;
+  line-height: 1.4;
+}
+
+img {
+  margin: 30px;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+h1 {
+  color: $maincolor;
+  font-size: 30px;
+  font-weight: normal;
+  text-align: center;
+  text-shadow: 0.5px 0.5px 0.5px black;
+    }
+h2, h3, h4 {
+  margin: 25px;
+  padding: 25px;
+  color: $secondarycolor;
+  font-size: 25px;
+  font-weight: normal;
+  text-align: center;
+}
+// paragraph stylings outsite of a div
+p {
+  color: $yellow;
+  text-align: center;
+}
+// styling within a div
+div {
+  p {
+    color: $maincolor;
+    font-weight: normal;
+  }
+}
+
+li {
+  text-align: center;
+  list-style: none;
+}
+
+// Stylings for tables and their contents
+table {
+        margin-right: auto;
+        margin-left: auto;
+        padding: 10px;
+}
+
+th, td {
+        border: 1px solid black;
+        padding: 15px;
+        text-align: center;
+}
+th {
+        background-color: $maincolor;
+}
+
+// define an inheritance template
+%message {
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  padding: 10px;
+  margin: 10px;
+  color: white;
+}
+// Define a class called error message that inherits from %message
+.errormessage {
+  @extend %message;
+  background-color: $blue;
+  margin: 25px;
+}
+
+.successmessage {
+  @extend %message;
+  background-color: $maincolor;
+  margin: 25px;
+}
+
+// add a styling element to a specific ID 
+#mydescription {
+  background-color: #d3d3d3;
+}
